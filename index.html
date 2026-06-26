@@ -216,22 +216,7 @@
       <button class="gfilter" data-filter="office">Office</button>
       <button class="gfilter" data-filter="other">Other</button>
     </div>
-    <div class="gallery">
-      <img src="assets/galn01.jpg" alt="The main bar" loading="lazy" data-cat="bar" />
-      <img src="assets/galn02.jpg" alt="The Grand Hall (Palm Room)" loading="lazy" data-cat="hall" />
-      <img src="assets/galn03.jpg" alt="The biergarten pavilion" loading="lazy" data-cat="biergarten" />
-      <img src="assets/galn04.jpg" alt="Boeckling’s Parlor" loading="lazy" data-cat="parlor" />
-      <img src="assets/galn05.jpg" alt="The historic 1914 building" loading="lazy" data-cat="other" />
-      <img src="assets/galn06.jpg" alt="From the German kitchen" loading="lazy" data-cat="other" />
-      <img src="assets/galn07.jpg" alt="The bar on a lively night" loading="lazy" data-cat="bar" />
-      <img src="assets/galn08.jpg" alt="An event in the Grand Hall" loading="lazy" data-cat="hall" />
-      <img src="assets/galn09.jpg" alt="Original stained glass" loading="lazy" data-cat="other" />
-      <img src="assets/galn10.jpg" alt="The biergarten &amp; grounds" loading="lazy" data-cat="biergarten" />
-      <img src="assets/galn11.jpg" alt="Dining at the club" loading="lazy" data-cat="other" />
-      <img src="assets/galn12.jpg" alt="Inside the bar &amp; restaurant" loading="lazy" data-cat="bar" />
-      <img src="assets/galn13.jpg" alt="A cold bier in the biergarten" loading="lazy" data-cat="biergarten" />
-      <img src="assets/galn14.jpg" alt="The hall set for a banquet" loading="lazy" data-cat="hall" />
-    </div>
+    <div class="gallery" id="galleryGrid"></div>
     <p class="gallery-empty" id="galleryEmpty" hidden>More photos from this space coming soon.</p>
   </div>
 </section>
@@ -320,7 +305,9 @@
 <script src="content.js"></script>
 <script src="app.js"></script>
 <script src="editor.js"></script>
-<!-- Netlify Identity: enables the /admin login + invite flow for Decap CMS -->
+<!-- Owner PHOTO manager: /admin.html (password-gated, self-contained, download-to-publish). -->
+<!-- Decap CMS (Hours + Menu) lives at /admin/ and uses the Netlify Identity widget below;
+     it only saves once a git backend + Netlify Identity/Git Gateway are connected. -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {

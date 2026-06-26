@@ -37,9 +37,62 @@
     });
   }
 
+  function renderGallery(g) {
+    const grid = document.getElementById('galleryGrid');
+    if (!grid) return;
+    grid.innerHTML = '';
+    (g.photos || []).forEach(p => {
+      const img = document.createElement('img');
+      img.src = p.image; img.alt = p.alt || ''; img.loading = 'lazy';
+      if (p.cat) img.dataset.cat = p.cat;
+      grid.appendChild(img);
+    });
+    initFilter(grid);
+    initLightbox(grid);
+  }
+
+  function initFilter(grid) {
+    const filters = document.getElementById('galleryFilters');
+    if (!filters) return;
+    const empty = document.getElementById('galleryEmpty');
+    filters.onclick = e => {
+      const btn = e.target.closest('.gfilter');
+      if (!btn) return;
+      const cat = btn.dataset.filter;
+      filters.querySelectorAll('.gfilter').forEach(b => b.classList.toggle('is-active', b === btn));
+      let shown = 0;
+      grid.querySelectorAll('img').forEach(img => {
+        const match = cat === 'all' || img.dataset.cat === cat;
+        img.classList.toggle('is-hidden', !match);
+        if (match) shown++;
+      });
+      if (empty) empty.hidden = shown > 0;
+    };
+  }
+
+  function initLightbox(grid) {
+    let lb = document.getElementById('lightbox');
+    if (!lb) {
+      lb = document.createElement('div');
+      lb.id = 'lightbox';
+      lb.style.cssText = 'position:fixed;inset:0;z-index:200;background:rgba(20,12,6,.92);display:none;align-items:center;justify-content:center;cursor:zoom-out;padding:4vw';
+      lb.innerHTML = '<img style="max-width:94vw;max-height:90vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6)" alt="" />';
+      document.body.appendChild(lb);
+      lb.addEventListener('click', () => { lb.style.display = 'none'; });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.style.display = 'none'; });
+    }
+    const lbImg = lb.querySelector('img');
+    grid.addEventListener('click', e => {
+      const img = e.target.closest('img');
+      if (!img) return;
+      lbImg.src = img.src; lbImg.alt = img.alt; lb.style.display = 'flex';
+    });
+  }
+
   function load(path) {
     return fetch(path, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
   }
   load('content/hours.json').then(renderHours).catch(e => console.error('hours load failed', e));
   load('content/menu.json').then(renderMenu).catch(e => console.error('menu load failed', e));
+  load('content/gallery.json').then(renderGallery).catch(e => console.error('gallery load failed', e));
 })();

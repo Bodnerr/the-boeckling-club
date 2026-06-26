@@ -1,26 +1,7 @@
 // year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// gallery category filter
-(() => {
-  const filters = document.getElementById('galleryFilters');
-  if (!filters) return;
-  const imgs = [...document.querySelectorAll('.gallery img')];
-  const empty = document.getElementById('galleryEmpty');
-  filters.addEventListener('click', e => {
-    const btn = e.target.closest('.gfilter');
-    if (!btn) return;
-    const cat = btn.dataset.filter;
-    filters.querySelectorAll('.gfilter').forEach(b => b.classList.toggle('is-active', b === btn));
-    let shown = 0;
-    imgs.forEach(img => {
-      const match = cat === 'all' || img.dataset.cat === cat;
-      img.classList.toggle('is-hidden', !match);
-      if (match) shown++;
-    });
-    if (empty) empty.hidden = shown > 0;
-  });
-})();
+// (gallery filter + lightbox now live in content.js — they run after the gallery renders from content/gallery.json)
 
 // mobile nav
 const toggle = document.querySelector('.nav__toggle');
@@ -31,18 +12,6 @@ toggle?.addEventListener('click', () => {
 });
 links?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 
-// simple gallery lightbox
-const lb = document.createElement('div');
-lb.id = 'lightbox';
-lb.style.cssText = 'position:fixed;inset:0;z-index:200;background:rgba(20,12,6,.92);display:none;align-items:center;justify-content:center;cursor:zoom-out;padding:4vw';
-lb.innerHTML = '<img style="max-width:94vw;max-height:90vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6)" alt="" />';
-document.body.appendChild(lb);
-const lbImg = lb.querySelector('img');
-document.querySelectorAll('.gallery img').forEach(img => {
-  img.addEventListener('click', () => { lbImg.src = img.src; lbImg.alt = img.alt; lb.style.display = 'flex'; });
-});
-lb.addEventListener('click', () => { lb.style.display = 'none'; lbImg.src = ''; });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') { lb.style.display = 'none'; } });
 
 // ===== Chatbot (rule-based, free; unanswered questions -> Netlify form -> the club) =====
 (function () {

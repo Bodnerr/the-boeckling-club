@@ -59,3 +59,31 @@ collections:
                   - { name: "name", label: "Name", widget: "string" }
                   - { name: "desc", label: "Description", widget: "text", required: false }
                   - { name: "price", label: "Price (optional)", widget: "string", required: false, hint: "e.g. $9 — leave blank for no price" }
+
+  - name: "gallery"
+    label: "📷 Photos"
+    description: "Reorder, recategorize, caption, add or remove gallery photos."
+    files:
+      - name: "gallery"
+        label: "Gallery Photos"
+        file: "content/gallery.json"
+        fields:
+          - name: "photos"
+            label: "Photos"
+            label_singular: "Photo"
+            widget: "list"
+            summary: "{{fields.alt}} ({{fields.cat}})"
+            fields:
+              - { name: "image", label: "Photo", widget: "image", hint: "Choose/upload the photo" }
+              - { name: "alt", label: "Caption", widget: "string", required: false }
+              - name: "cat"
+                label: "Category"
+                widget: "select"
+                default: "other"
+                options:
+                  - { label: "Bar", value: "bar" }
+                  - { label: "Boeckling’s Parlor", value: "parlor" }
+                  - { label: "Grand Hall", value: "hall" }
+                  - { label: "Biergarten", value: "biergarten" }
+                  - { label: "Office", value: "office" }
+                  - { label: "Other", value: "other" }

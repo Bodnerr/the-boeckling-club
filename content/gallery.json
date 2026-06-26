@@ -1,0 +1,18 @@
+{
+  "photos": [
+    { "image": "assets/galn01.jpg", "alt": "The main bar", "cat": "bar" },
+    { "image": "assets/galn02.jpg", "alt": "The Grand Hall (Palm Room)", "cat": "hall" },
+    { "image": "assets/galn03.jpg", "alt": "The biergarten pavilion", "cat": "biergarten" },
+    { "image": "assets/galn04.jpg", "alt": "Boeckling’s Parlor", "cat": "parlor" },
+    { "image": "assets/galn05.jpg", "alt": "The historic 1914 building", "cat": "other" },
+    { "image": "assets/galn06.jpg", "alt": "From the German kitchen", "cat": "other" },
+    { "image": "assets/galn07.jpg", "alt": "The bar on a lively night", "cat": "bar" },
+    { "image": "assets/galn08.jpg", "alt": "An event in the Grand Hall", "cat": "hall" },
+    { "image": "assets/galn09.jpg", "alt": "Original stained glass", "cat": "other" },
+    { "image": "assets/galn10.jpg", "alt": "The biergarten & grounds", "cat": "biergarten" },
+    { "image": "assets/galn11.jpg", "alt": "Dining at the club", "cat": "other" },
+    { "image": "assets/galn12.jpg", "alt": "Inside the bar & restaurant", "cat": "bar" },
+    { "image": "assets/galn13.jpg", "alt": "A cold bier in the biergarten", "cat": "biergarten" },
+    { "image": "assets/galn14.jpg", "alt": "The hall set for a banquet", "cat": "hall" }
+  ]
+}
