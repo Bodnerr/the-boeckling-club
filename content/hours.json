@@ -1,0 +1,9 @@
+{
+  "note": "Now observing summer hours · Kitchen & bar · Biergarten open rain or shine",
+  "days": [
+    { "day": "Tue–Fri", "hours": "5pm – 10pm", "closed": false },
+    { "day": "Saturday", "hours": "Noon – 10pm", "closed": false },
+    { "day": "Sunday", "hours": "Noon – 6pm", "closed": false },
+    { "day": "Monday", "hours": "Closed", "closed": true }
+  ]
+}

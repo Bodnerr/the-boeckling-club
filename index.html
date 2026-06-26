@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Boeckling Club | German Restaurant, Bar & Biergarten — Sandusky, Ohio</title>
+<meta name="description" content="The Boeckling Club — authentic German restaurant, bar and biergarten in a historic 1914 Sandusky landmark. House-made sausages, imported German bier, Sandusky's oldest Oktoberfest, and a grand hall for weddings & events." />
+<meta property="og:title" content="The Boeckling Club — German Restaurant, Bar & Biergarten" />
+<meta property="og:description" content="Authentic German food & imported bier in a historic 1914 Sandusky landmark. Restaurant, biergarten & grand event hall. Prost!" />
+<meta property="og:type" content="restaurant" />
+<meta property="og:image" content="https://the-boeckling-club.netlify.app/assets/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="The Boeckling Club coat of arms — German restaurant & biergarten, Sandusky Ohio, built 1914, club established 2014" />
+<meta property="og:url" content="https://the-boeckling-club.netlify.app/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="The Boeckling Club — German Restaurant, Bar & Biergarten" />
+<meta name="twitter:description" content="Authentic German food & imported bier in a historic 1914 Sandusky landmark. Prost!" />
+<meta name="twitter:image" content="https://the-boeckling-club.netlify.app/assets/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Lato:ital,wght@0,400;0,700;1,400&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="assets/favicon-3.png" />
+<link rel="apple-touch-icon" href="assets/favicon-3.png" />
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "The Boeckling Club",
+  "servesCuisine": "German",
+  "image": "assets/hero.jpg",
+  "telephone": "+1-419-656-8764",
+  "email": "boecklingclub@gmail.com",
+  "address": { "@type": "PostalAddress", "streetAddress": "614 Columbus Avenue", "addressLocality": "Sandusky", "addressRegion": "OH", "postalCode": "44870", "addressCountry": "US" },
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "17:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "18:00" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Bavarian diamond ribbon -->
+<div class="ribbon" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="top">
+  <div class="nav__inner container">
+    <a href="#top" class="brand">
+      <img src="assets/crest-mark-3.png" alt="The Boeckling Club crest" class="brand__crest" />
+      <span class="brand__txt">The Boeckling Club<small>Sandusky · Est. 1914</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#story">Story</a>
+      <a href="#restaurant">Restaurant &amp; Biergarten</a>
+      <a href="#menu">Menu</a>
+      <a href="#events">Events</a>
+      <a href="#spaces">Host an Event</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn btn--gold nav__cta" href="tel:+14196568764">📞 (419) 656-8764</a>
+    <button class="nav__toggle" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__img" style="background-image:url('assets/hero.jpg?v=2')"></div>
+  <div class="hero__scrim"></div>
+  <div class="container hero__content">
+    <p class="eyebrow">Sandusky, Ohio · A Historic 1914 Landmark</p>
+    <h1>The Boeckling Club</h1>
+    <p class="hero__tag">German Restaurant · Bar · <span class="nowrap">Biergarten</span></p>
+    <p class="hero__sub">Authentic German fare and imported bier, served with old-world <em>Gemütlichkeit</em> inside the historic home of the man who built Cedar Point.</p>
+    <div class="hero__cta">
+      <a class="btn btn--gold" href="#menu">See the Menu</a>
+      <a class="btn btn--ghost" href="#spaces">Host an Event</a>
+    </div>
+    <p class="hero__badge">★ On the National Register of Historic Places since 1983</p>
+  </div>
+</section>
+
+<!-- DIAMOND DIVIDER -->
+<div class="diamonds" aria-hidden="true"></div>
+
+<!-- WILLKOMMEN -->
+<section class="section willkommen">
+  <div class="container willkommen__inner">
+    <p class="script-accent">Willkommen!</p>
+    <h2>A warm German welcome in the heart of Sandusky</h2>
+    <p class="lead">Step inside for house-made sausages, soft Bavarian pretzels, and steins of imported German bier — then spill out back into our newly renovated biergarten. Whether it's dinner at the bar or a 200-guest celebration in the Grand Hall, you'll find history, charm, and good cheer in equal measure. <strong>Prost!</strong></p>
+    <div class="hours-strip" id="hoursStrip"></div>
+    <p class="hours-note" id="hoursNote"></p>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section section--dark" id="story">
+  <div class="container story">
+    <div class="story__img">
+      <img src="assets/history.jpg" alt="The Boeckling Club, a 1914 Sandusky landmark" loading="lazy" />
+      <span class="story__stamp">Circa<br/>1914</span>
+    </div>
+    <div class="story__text">
+      <p class="eyebrow eyebrow--gold">Preserving History</p>
+      <h2>The home that Cedar Point built</h2>
+      <p>The Boeckling Club was built in 1914 as the personal residence of <strong>George A. Boeckling</strong> and his sister Elisabeth. Born to German immigrants in 1862, George took the helm of a humble bathing beach and picnic grounds in 1897 and transformed it into the world-famous amusement park we know today as <strong>Cedar Point</strong>.</p>
+      <p>He brought that same imagination home, designing this house with Cleveland architect W.H. Hodges in a flourish of early-20th-century amusement-park style. The original drawings still hang on our walls.</p>
+      <p>After passing through the Boeckling family and serving the Sandusky Knights of Columbus from 1945 to 2014, the home was lovingly restored by <strong>Thomas Bodner</strong> — a Knights member and local architect — who is dedicated to preserving its history and charm for the whole community to enjoy.</p>
+      <p class="register-badge">🏛 National Register of Historic Places since 1983</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESTAURANT & BIERGARTEN -->
+<section class="section" id="restaurant">
+  <div class="container">
+    <p class="eyebrow eyebrow--center">Restaurant · Bar · Biergarten</p>
+    <h2 class="center">Pull up a stool. Stay a while.</h2>
+    <p class="lead center">This former Knights of Columbus bar is full of irresistible character — an intimate spot for a bier and a brat — with a newly renovated <strong>biergarten</strong> waiting out back. A full back-of-house kitchen and a cozy pub kitchen mean we can serve a quiet dinner or a full hall with equal care.</p>
+    <div class="feature-grid">
+      <figure class="feature"><img src="assets/bar.jpg" alt="The historic bar" loading="lazy" /><figcaption><h3>The Bar</h3><p>Cozy, characterful, and steeped in history — the perfect perch for a draught and good conversation.</p></figcaption></figure>
+      <figure class="feature"><img src="assets/biergarten.jpg" alt="Biergarten bier" loading="lazy" /><figcaption><h3>The Biergarten</h3><p>Our newly renovated outdoor biergarten — raise a stein under open skies, rain or shine.</p></figcaption></figure>
+      <figure class="feature"><img src="assets/food.jpg" alt="German plate" loading="lazy" /><figcaption><h3>The Kitchen</h3><p>House-made sausages, sauerkraut, and sides built on recipes that honor the old country.</p></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section section--parchment" id="menu">
+  <div class="container">
+    <p class="eyebrow eyebrow--center">Speisekarte</p>
+    <h2 class="center">The Menu</h2>
+    <p class="lead center menu-note" id="menuNote">A sampling of our German kitchen &amp; bier list — <em>subject to change.</em></p>
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="section section--dark" id="events">
+  <div class="container">
+    <p class="eyebrow eyebrow--gold eyebrow--center">Feste &amp; Festivals</p>
+    <h2 class="center light">Come Celebrate With Us</h2>
+    <div class="events-grid">
+      <article class="event-card">
+        <div class="event-card__img" style="background-image:url('assets/tap.jpg')"></div>
+        <div class="event-card__body">
+          <span class="event-tag">September</span>
+          <h3>Oktoberfest</h3>
+          <p><strong>Sandusky's oldest Oktoberfest!</strong> Authentic German music, food and bier across two festive evenings. Indoor bier hall &amp; outdoor biergarten — come rain or shine, with live polka from the Culkar-Golob Polka Band. Prost!</p>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-card__img" style="background-image:url('assets/christmas.jpg')"></div>
+        <div class="event-card__body">
+          <span class="event-tag">December</span>
+          <h3>Christkindlmarkt</h3>
+          <p>A traditional German Christmas market — schnitzel and sausages, German bier and hot drinks, 20+ craft vendors and live accordion carols. Admission by charitable donation benefiting Care &amp; Share.</p>
+        </div>
+      </article>
+      <article class="event-card">
+        <div class="event-card__img" style="background-image:url('assets/biergarten.jpg')"></div>
+        <div class="event-card__body">
+          <span class="event-tag">Spring</span>
+          <h3>Springfest</h3>
+          <p>We welcome the warm weather back to the biergarten with food, bier and good company. Watch this space — and our newsletter — for dates.</p>
+        </div>
+      </article>
+    </div>
+    <p class="center"><a class="btn btn--gold" href="#visit">Get Event Updates</a></p>
+  </div>
+</section>
+
+<!-- SPACES / EVENT RENTAL -->
+<section class="section" id="spaces">
+  <div class="container">
+    <p class="eyebrow eyebrow--center">Host an Event</p>
+    <h2 class="center">A grand, historic setting for every occasion</h2>
+    <p class="lead center">From 200-guest weddings to intimate gatherings of 30 — celebrate inside a true Sandusky landmark.</p>
+    <div class="spaces-grid">
+      <article class="space">
+        <img src="assets/hall.jpg" alt="The Grand Hall / Palm Room" loading="lazy" />
+        <div class="space__body">
+          <div class="space__head"><h3>The Grand Hall</h3><span class="cap">Up to 200</span></div>
+          <p>Also known as the Palm Room — full of charm and history, perfect for weddings, anniversaries, graduations, business meetings and celebrations of life. Kitchen access available; food &amp; drink packages on request. Adjacent to Boeckling's Parlor for extra space.</p>
+        </div>
+      </article>
+      <article class="space">
+        <img src="assets/galn12.jpg" alt="Boeckling's Parlor" loading="lazy" />
+        <div class="space__body">
+          <div class="space__head"><h3>Boeckling's Parlor</h3><span class="cap">Up to 30</span></div>
+          <p>A traditionally decorated room ideal for meetings, social hours, dining and card playing — cozy on its own or paired with the Grand Hall next door.</p>
+        </div>
+      </article>
+    </div>
+    <p class="center"><a class="btn btn--blue" href="#visit">Request Hall Availability</a> &nbsp; <a class="btn btn--ghost-dk" href="#visit">Ask About Office Rental</a></p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section--parchment" id="gallery">
+  <div class="container">
+    <p class="eyebrow eyebrow--center">A Look Inside</p>
+    <h2 class="center">Gallery</h2>
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="gfilter is-active" data-filter="all">All</button>
+      <button class="gfilter" data-filter="bar">Bar</button>
+      <button class="gfilter" data-filter="parlor">Boeckling’s Parlor</button>
+      <button class="gfilter" data-filter="hall">Grand Hall</button>
+      <button class="gfilter" data-filter="biergarten">Biergarten</button>
+      <button class="gfilter" data-filter="office">Office</button>
+      <button class="gfilter" data-filter="other">Other</button>
+    </div>
+    <div class="gallery">
+      <img src="assets/galn01.jpg" alt="The main bar" loading="lazy" data-cat="bar" />
+      <img src="assets/galn02.jpg" alt="The Grand Hall (Palm Room)" loading="lazy" data-cat="hall" />
+      <img src="assets/galn03.jpg" alt="The biergarten pavilion" loading="lazy" data-cat="biergarten" />
+      <img src="assets/galn04.jpg" alt="Boeckling’s Parlor" loading="lazy" data-cat="parlor" />
+      <img src="assets/galn05.jpg" alt="The historic 1914 building" loading="lazy" data-cat="other" />
+      <img src="assets/galn06.jpg" alt="From the German kitchen" loading="lazy" data-cat="other" />
+      <img src="assets/galn07.jpg" alt="The bar on a lively night" loading="lazy" data-cat="bar" />
+      <img src="assets/galn08.jpg" alt="An event in the Grand Hall" loading="lazy" data-cat="hall" />
+      <img src="assets/galn09.jpg" alt="Original stained glass" loading="lazy" data-cat="other" />
+      <img src="assets/galn10.jpg" alt="The biergarten &amp; grounds" loading="lazy" data-cat="biergarten" />
+      <img src="assets/galn11.jpg" alt="Dining at the club" loading="lazy" data-cat="other" />
+      <img src="assets/galn12.jpg" alt="Inside the bar &amp; restaurant" loading="lazy" data-cat="bar" />
+      <img src="assets/galn13.jpg" alt="A cold bier in the biergarten" loading="lazy" data-cat="biergarten" />
+      <img src="assets/galn14.jpg" alt="The hall set for a banquet" loading="lazy" data-cat="hall" />
+    </div>
+    <p class="gallery-empty" id="galleryEmpty" hidden>More photos from this space coming soon.</p>
+  </div>
+</section>
+
+<!-- VISIT / CONTACT -->
+<section class="section section--dark" id="visit">
+  <div class="container visit">
+    <div class="visit__info">
+      <p class="eyebrow eyebrow--gold">Besuchen Sie uns</p>
+      <h2 class="light">Visit the Boeckling Club</h2>
+      <ul class="visit__list">
+        <li><strong>Address</strong><a href="https://maps.google.com/?q=614+Columbus+Avenue+Sandusky+OH+44870" target="_blank" rel="noopener">614 Columbus Avenue<br/>Sandusky, Ohio 44870</a></li>
+        <li><strong>Phone</strong><a href="tel:+14196568764">(419) 656-8764</a></li>
+        <li><strong>Email</strong><a href="mailto:boecklingclub@gmail.com">boecklingclub@gmail.com</a></li>
+        <li><strong>Hours</strong>Tue–Fri 5–10pm · Sat 12–10pm · Sun 12–6pm · Mon closed</li>
+      </ul>
+      <iframe class="visit__map" title="Map to The Boeckling Club" loading="lazy" src="https://www.google.com/maps?q=614+Columbus+Avenue+Sandusky+OH+44870&output=embed"></iframe>
+    </div>
+    <form class="visit__form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="inquiry" />
+      <p class="hidden"><label>Skip: <input name="bot-field" /></label></p>
+      <h3>Make an Inquiry</h3>
+      <p class="form-intro">Dining questions, hall rentals, or event updates — send a note and we'll be in touch.</p>
+      <label>Name*<input type="text" name="name" required /></label>
+      <div class="row">
+        <label>Email*<input type="email" name="email" required /></label>
+        <label>Phone<input type="tel" name="phone" /></label>
+      </div>
+      <label>I'm interested in
+        <select name="topic">
+          <option>Dining / general</option>
+          <option>Hall rental &amp; events</option>
+          <option>Office rental</option>
+          <option>Oktoberfest / festivals</option>
+          <option>Newsletter sign-up</option>
+        </select>
+      </label>
+      <label>Message*<textarea name="message" rows="4" required placeholder="How can we help?"></textarea></label>
+      <button class="btn btn--gold btn--block" type="submit">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="diamonds diamonds--footer" aria-hidden="true"></div>
+  <div class="container footer__inner">
+    <div>
+      <p class="footer__brand">The Boeckling Club</p>
+      <p>A historic 1914 German restaurant, biergarten &amp; event hall in Sandusky, Ohio.</p>
+      <p class="footer__prost">Danke schön — und Prost! 🍺</p>
+    </div>
+    <div class="footer__links">
+      <a href="#story">Story</a><a href="#menu">Menu</a><a href="#events">Events</a>
+      <a href="#spaces">Host an Event</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a>
+    </div>
+    <div>
+      <p>614 Columbus Avenue<br/>Sandusky, Ohio 44870</p>
+      <p><a href="tel:+14196568764">(419) 656-8764</a><br/><a href="mailto:boecklingclub@gmail.com">boecklingclub@gmail.com</a></p>
+      <p class="footer__copy">© <span id="year"></span> The Boeckling Club</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Hidden form so the chatbot can deliver questions to the club (Netlify Forms) -->
+<form name="chatbot" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="message" /><input type="text" name="contact" /><input name="bot-field" />
+</form>
+
+<!-- CHATBOT -->
+<button id="chatBtn" class="chat-btn" aria-label="Chat with us">💬</button>
+<div id="chatPanel" class="chat-panel" hidden>
+  <div class="chat-head">
+    <img src="assets/crest-mark.png" alt="" class="chat-head__crest" />
+    <span>Boeckling Club Host</span>
+    <button id="chatClose" aria-label="Close chat">✕</button>
+  </div>
+  <div id="chatLog" class="chat-log"></div>
+  <div class="chat-quick" id="chatQuick"></div>
+  <form id="chatForm" class="chat-input">
+    <input id="chatText" type="text" placeholder="Ask about hours, menu, events…" autocomplete="off" />
+    <button type="submit" aria-label="Send">➤</button>
+  </form>
+</div>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+<script src="editor.js"></script>
+<!-- Netlify Identity: enables the /admin login + invite flow for Decap CMS -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+      }
+    });
+  }
+</script>
+</body>
+</html>

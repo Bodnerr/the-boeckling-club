@@ -1,0 +1,56 @@
+{
+  "note": "A sampling of our German kitchen & bier list — subject to change.",
+  "sections": [
+    {
+      "title": "Appetizers",
+      "note": "",
+      "items": [
+        { "name": "German Pretzel", "desc": "Soft pretzel with bier cheese", "price": "" },
+        { "name": "Sauerkraut Balls", "desc": "Oven-baked, with horseradish brown mustard", "price": "" },
+        { "name": "Currywurst", "desc": "Garlic knackwurst cooked in dark bier, smothered in currysauce", "price": "" }
+      ]
+    },
+    {
+      "title": "Sandwiches",
+      "note": "Topped with traditional or Bavarian-style sauerkraut, coleslaw or chips on a toasted wheat bun.",
+      "items": [
+        { "name": "Knackwurst", "desc": "Garlic-flavored pork sausage cooked in dark bier", "price": "" },
+        { "name": "German Bratwurst", "desc": "Mildly seasoned pork sausage cooked in dark bier", "price": "" },
+        { "name": "Hungarian Sausage", "desc": "Paprika-spiced sausage cooked in dark bier (kielbasa-style)", "price": "" },
+        { "name": "Pulled Pork Loin", "desc": "Stewed in German-style sweet apple BBQ sauce", "price": "" }
+      ]
+    },
+    {
+      "title": "Meals",
+      "note": "",
+      "items": [
+        { "name": "German Plate", "desc": "Any two sausages and any two sides", "price": "" },
+        { "name": "German Sampler", "desc": "Four half-size sausages plus four half-size sides", "price": "" },
+        { "name": "Deluxe Sampler Platter", "desc": "Two appetizers, two sausages, two sides & a dessert", "price": "" }
+      ]
+    },
+    {
+      "title": "Sides",
+      "note": "",
+      "items": [
+        { "name": "German Potato Salad", "desc": "Homemade with vinegar, served warm", "price": "" },
+        { "name": "Sauerkraut", "desc": "Warm — traditional or Bavarian (sweet)", "price": "" },
+        { "name": "Rotkohl", "desc": "Hand-cut red cabbage with apple", "price": "" },
+        { "name": "Potato Wedgies", "desc": "Homemade & oven-baked", "price": "" },
+        { "name": "Apfel Sauce", "desc": "Homemade, chunky & seasoned", "price": "" },
+        { "name": "Creamy Coleslaw", "desc": "Hand-cut green cabbage, homemade sauce", "price": "" }
+      ]
+    },
+    {
+      "title": "Draught Bier",
+      "note": "Flights (3 × 5oz) · 64oz Growler · Pitcher",
+      "items": [
+        { "name": "Paulaner Hefe-Weizen", "desc": "Unfiltered wheat ale — naturally cloudy, silky gold under a thick head", "price": "" },
+        { "name": "Paulaner Salvator Doppelbock", "desc": "375-year-old recipe — smooth chocolate, dark caramel malt", "price": "" },
+        { "name": "Hofbräu Original", "desc": "Luminous golden, lightly malty, elegant finish", "price": "" },
+        { "name": "Franziskaner Weissbier", "desc": "Bavarian wheat with banana & citrus, lush white foam", "price": "" },
+        { "name": "Spaten Optimator", "desc": "Classic dark Doppelbock — rich roasted malt", "price": "" }
+      ]
+    }
+  ]
+}

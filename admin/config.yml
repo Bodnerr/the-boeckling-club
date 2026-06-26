@@ -1,0 +1,61 @@
+backend:
+  name: git-gateway
+  branch: main
+
+site_url: https://the-boeckling-club.netlify.app
+display_url: https://the-boeckling-club.netlify.app
+logo_url: https://the-boeckling-club.netlify.app/assets/favicon-3.png
+
+# Friendly commit messages when your dad saves
+commit_messages:
+  update: 'Update {{collection}} via admin'
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "hours"
+    label: "🕒 Hours"
+    description: "Edit the opening hours shown on the website."
+    files:
+      - name: "hours"
+        label: "Opening Hours"
+        file: "content/hours.json"
+        fields:
+          - { name: "note", label: "Note shown under the hours", widget: "string", required: false }
+          - name: "days"
+            label: "Days"
+            label_singular: "Day"
+            widget: "list"
+            summary: "{{fields.day}} — {{fields.hours}}"
+            fields:
+              - { name: "day", label: "Day(s)", widget: "string", hint: "e.g. Tue–Fri, Saturday, Monday" }
+              - { name: "hours", label: "Hours", widget: "string", hint: "e.g. 5pm – 10pm  (or type Closed)" }
+              - { name: "closed", label: "Mark as closed (greys it out)", widget: "boolean", default: false, required: false }
+
+  - name: "menu"
+    label: "🍽 Menu"
+    description: "Edit the food & bier menu."
+    files:
+      - name: "menu"
+        label: "Food & Bier Menu"
+        file: "content/menu.json"
+        fields:
+          - { name: "note", label: "Note under the menu title", widget: "string", required: false }
+          - name: "sections"
+            label: "Menu Sections"
+            label_singular: "Section"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Section title", widget: "string", hint: "e.g. Appetizers, Sides, Draught Bier" }
+              - { name: "note", label: "Section note (optional)", widget: "string", required: false }
+              - name: "items"
+                label: "Items"
+                label_singular: "Item"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: "name", label: "Name", widget: "string" }
+                  - { name: "desc", label: "Description", widget: "text", required: false }
+                  - { name: "price", label: "Price (optional)", widget: "string", required: false, hint: "e.g. $9 — leave blank for no price" }
